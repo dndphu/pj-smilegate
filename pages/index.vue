@@ -2,28 +2,30 @@
   <section class="home">
     <h1>Photo Card</h1>
     <div class="grid">
-      <div v-for="(item, index) in 14" :key="index" class="card">
-        <div class="card-image">
-          <img src="@/assets/images/unmma82.jpeg" alt="Card Image" />
+      <template v-for="(item, index) in 10" :key="index">
+        <div class="card">
+          <div class="card-image">
+            <img src="@/assets/images/2MM9Jqo.png" alt="Card Image" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Card 2</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
         </div>
-        <div class="card-content">
-          <h3 class="card-title">Card 1</h3>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+        <div class="card">
+          <div class="card-image">
+            <img src="@/assets/images/unmma82.jpeg" alt="Card Image" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Card 1</h3>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-image">
-          <img src="@/assets/images/2MM9Jqo.png" alt="Card Image" />
-        </div>
-        <div class="card-content">
-          <h3 class="card-title">Card 2</h3>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
+      </template>
     </div>
   </section>
 </template>
